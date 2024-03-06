@@ -1,0 +1,34 @@
+/* TIPOGRAFIA */
+*{
+    font-size: 14px;
+    font-family: Oswald;
+}
+
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 2.2857rem; /* Equivalente a 32px (14px * 2.2857) */
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2.2857rem; /* Equivalente a 32px (14px * 2.2857) */
+    font-weight: 400;
+}
+
+
+p, span{
+    font-size: 1.4286rem; 
+}
+
+a{
+    font-size: 1.4286rem;
+    font-weight: 300;
+    color: var(--color-green);
+}
+span{
+    color: var(--color-green);
+}

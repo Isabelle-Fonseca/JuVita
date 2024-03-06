@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none; 
+}
+
+:root{
+    --color-white: #fff;
+    --color-black: #000;
+    --color-light-orange: #F6E4D0;
+    --color-lighter-orange: #FFF9F3;
+    --color-orange: #EC8922;
+    --color-green:#6DC35D;
+    --color-dark-green: #3F7333;
+}
+
+.container{
+    padding: 16px 12%;
+}
+.container-nav{
+    display: flex;
+    padding: 32px;
+    justify-content: space-between;
+    border-bottom: 12px solid var(--color-orange);
+}
+
+.logo img{
+    width: 180px;
+    height: 100px;
+}
+div.box-s-img{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+input{
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-position: 400px center;
+    padding: 16px;
+    font-size: 24px;
+    border: 1px solid #2B2B2B;
+    border-radius: 5px;
+    width: 461px;
+    height: 64px;
+}
+
+/* BANNER */
+.container-banner{
+    background-image: url(../img/suco-de-laranja-fresco-e-frio.jpg);
+    background-size:cover;
+    background-position-y: 15% ;
+    padding: 180px 12%;
+    gap: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.banner-txt{
+    display: flex;
+    flex-direction: column;
+    height: 211px;
+    gap: 32px;
+}
+
+div.banner-txt h3{
+    width: 356px;
+}
+
+div.banner-txt span{
+    font-size: 4rem;
+    color: var(--color-orange);
+}
+
+div.banner-imgs{
+    display: flex;
+    gap: 16px;
+}
+.banner-img img{
+    width: 208px;
+    height: 192px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 4.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* SUCOS */
+
+.container-sucos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 610px));
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "txt-sucos img-bebendo"
+    "img-sucos img-bebendo";
+    column-gap: 64px;
+    background-color: var(--color-lighter-orange);
+    
+}
+
+
+.txt-sucos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: txt-sucos;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 12px solid var(--color-green);
+}
+
+a{
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    border-radius: 16px;
+    border: 2px solid var(--color-green);
+    width: 120px;
+    
+}
+.img-sucos{
+    background-image: url(../img/img-hsucos-h.png);
+    background-size: cover;
+    grid-area: img-sucos;
+    height: 325px;
+    /* width: clamp(200px, 100%, 610px); */
+}
+.img-bebendo{
+    background-image: url(../img/img-vsucos-v.png);
+    background-size: cover;
+    grid-area: img-bebendo;
+    height: 687px;
+}
+
+/* VITAMINAS */
+
+.container-vitaminas {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "img-vitamina txt-vitaminas"
+      "img-vitamina img-vitaminas";
+    column-gap: 64px;
+    background-color: var(--color-lighter-orange);
+  }
+  
+  .img-vitamina {
+    background-image: url(../img/img-vvitaminas-v.png);
+    background-size: cover;
+    grid-area: img-vitamina;
+    height: 687px;
+  }
+  
+  .txt-vitaminas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: txt-vitaminas;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 12px solid var(--color-orange);
+  }
+  
+  .btn-vitaminas a {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    border-radius: 16px;
+    color: var(--color-white);
+    border: 2px solid var(--color-green);
+    background-color: var(--color-green);
+    width: 120px;
+  }
+  
+  .img-vitaminas {
+    background-image: url(../img/img-hvitaminas-h.png);
+    background-size: cover;
+    grid-area: img-vitaminas;
+    height: 325px; /* Ajuste conforme necessário */
+  }
+  
