@@ -17,18 +17,24 @@
 }
 
 .container{
-    padding: 16px 12%;
+    padding: 16px 32px;
+    max-width: 1216px;
+    min-width: 360px;
+    margin: auto;
 }
 .container-nav{
     display: flex;
     padding: 32px;
+    max-width: 1216px;
+    min-width: 360px;
+    margin: auto;
     justify-content: space-between;
     border-bottom: 12px solid var(--color-orange);
 }
 
 .logo img{
-    width: 180px;
-    height: 100px;
+    max-width: 100%;
+    min-width: 128px;
 }
 div.box-s-img{
     display: flex;
@@ -39,21 +45,24 @@ div.box-s-img{
 input#pesquisa{
     background-image: url(../img/search.png);
     background-repeat: no-repeat;
-    background-position: 400px center;
+    background-position: 90% center;
     padding: 16px;
     font-size: 24px;
     border: 1px solid #2B2B2B;
     border-radius: 5px;
-    width: 461px;
-    height: 64px;
+    width: max(25vw, 224px);
+    height: 60px;
 }
 
 /* BANNER */
 .container-banner{
+    max-width: 1216px;
+    min-width: 360px;
+    margin: auto;
     background-image: url(../img/suco-de-laranja-fresco-e-frio.jpg);
     background-size:cover;
     background-position-y: 15% ;
-    padding: 180px 12%;
+    padding: 180px 32px;
     gap: 64px;
     display: flex;
     flex-direction: column;
@@ -87,7 +96,9 @@ div.banner-imgs{
 }
 
 /* SUCOS */
-
+section.sucos{
+    background-color: var(--color-lighter-orange);
+}
 .container-sucos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(312px, 610px));
@@ -96,8 +107,6 @@ div.banner-imgs{
     "txt-sucos img-bebendo"
     "img-sucos img-bebendo";
     column-gap: 64px;
-    background-color: var(--color-lighter-orange);
-    
 }
 
 
@@ -187,9 +196,11 @@ a.btn-sucos, .btn-l-form a{
   }
 
 /* NOVIDADES */
+section.novidades{
+    background-color: var(--color-lighter-orange);
+}
 div.container-novidades{
     display: flex;
-    background-color: var(--color-lighter-orange);
     gap: 68px;
 }
 
@@ -321,11 +332,13 @@ footer{
     flex-direction: column;
     background-color: var(--color-lighter-orange);
     gap: 64px;
-    padding: 32px 4%
+    padding: 32px 0
 }
 .rodape{
+    max-width: 1216px;
+    min-width: 360px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
     text-align: center;
     gap: 64px;
 
@@ -398,3 +411,14 @@ footer{
     gap: 8px;
 }
   
+
+@media screen and (max-width:576px){
+    .container-nav{
+        flex-direction: column;
+        justify-content: center;
+        min-width: 360px;
+    }
+    .logo img{
+        width: 50%;
+    }
+}
