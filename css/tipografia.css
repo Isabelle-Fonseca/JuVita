@@ -10,25 +10,30 @@ h1{
 }
 
 h2{
-    font-size: 2.2857rem; /* Equivalente a 32px (14px * 2.2857) */
+    font-size: 2.28rem; /* Equivalente a 32px (14px * 2.2857) */
     font-weight: 700;
 }
 
 h3{
-    font-size: 2.2857rem; /* Equivalente a 32px (14px * 2.2857) */
+    font-size: 2.28rem; /* Equivalente a 32px (14px * 2.2857) */
     font-weight: 400;
 }
 
 
-p, span{
-    font-size: 1.4286rem; 
+p, span, strong{
+    font-size: 1.42rem; 
 }
 
 a{
-    font-size: 1.4286rem;
+    font-size: 1.42rem;
     font-weight: 300;
     color: var(--color-green);
 }
 span{
     color: var(--color-green);
+}
+
+label{
+    font-size: 1.42rem;
+    font-weight: 300;
 }

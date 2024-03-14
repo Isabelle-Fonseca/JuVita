@@ -36,7 +36,7 @@ div.box-s-img{
     gap: 16px;
 }
 
-input{
+input#pesquisa{
     background-image: url(../img/search.png);
     background-repeat: no-repeat;
     background-position: 400px center;
@@ -111,10 +111,10 @@ div.banner-imgs{
     border-top: 12px solid var(--color-green);
 }
 
-a{
+a.btn-sucos, .btn-l-form a{
     display: flex;
     padding: 8px 16px;
-    align-items: center;
+    justify-content: center;
     border-radius: 16px;
     border: 2px solid var(--color-green);
     width: 120px;
@@ -145,7 +145,7 @@ a{
       "img-vitamina txt-vitaminas"
       "img-vitamina img-vitaminas";
     column-gap: 64px;
-    background-color: var(--color-lighter-orange);
+
   }
   
   .img-vitamina {
@@ -165,7 +165,7 @@ a{
     border-top: 12px solid var(--color-orange);
   }
   
-  .btn-vitaminas a {
+  .btn-vitaminas a, .btn-s-form a {
     display: flex;
     padding: 8px 16px;
     align-items: center;
@@ -173,7 +173,10 @@ a{
     color: var(--color-white);
     border: 2px solid var(--color-green);
     background-color: var(--color-green);
-    width: 120px;
+    
+  }
+  .btn-vitaminas a{
+      width: 120px;
   }
   
   .img-vitaminas {
@@ -182,4 +185,216 @@ a{
     grid-area: img-vitaminas;
     height: 325px; /* Ajuste conforme necessário */
   }
+
+/* NOVIDADES */
+div.container-novidades{
+    display: flex;
+    background-color: var(--color-lighter-orange);
+    gap: 68px;
+}
+
+div.box-txt-novidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 610px;
+}
+
+div.txt-novidade{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    gap:32px;
+    border-top: 12px solid var(--color-green);
+}
+
+div.img-pitaya-fresh{
+    background-image: url(../img/img-vnew-pitaya-fresh.png);
+    background-size: cover;
+    height: 689px;
+    width: 610px;
+}
+
+/* FORMULARIO */
+div.container-mkt{
+    display: flex;
+    justify-content: center;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    gap: 68px;
+}
+
+div.img-garrafa{
+    display: flex;
+    justify-content: center;
+    margin-top:68px;
+    background-image: url(../img/img-vsqueeze.png);
+    background-size: cover;
+    height: 684px;
+    width: 455px;
+}
+
+div.box-txt-mkt{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    gap:32px;
+    border-top: 12px solid var(--color-orange);
+    width: 772px;
+}
+
+div.txt-mkt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+    gap: 5px;
+}
+
+div.form-btn{
+    display: flex;
+    gap: 32px;
+}
+
+form{
+    display: grid;
+    width: 732px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nome nome nome nome nome nome"
+    "cpf cpf cpf cpf CEP CEP"
+    "endereco endereco endereco endereco endereco endereco"
+    "numero numero numero complemento complemento complemento"
+    "cidade cidade cidade estado celular celular"
+    "form-btn form-btn form-btn form-btn form-btn form-btn";
+    gap: 16px;
+}
+input{
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid var(--Verde, #6DC35D);
+}
+
+.nome-form{
+    grid-area: nome;
+}
+.cpf-form{
+    grid-area: cpf;
+}
+.CEP-form{
+    grid-area: CEP;
+}
+.endereco-form{
+    grid-area: endereco;
+}
+.numero-form{
+    grid-area: numero;
+}
+.complemento-form{
+    grid-area: complemento;
+}
+.cidade-form{
+    grid-area: cidade;
+}
+.estado-form{
+    grid-area: estado;
+}
+.celular-form{
+    grid-area: celular;
+}
+.form-btn{
+    grid-area: form-btn;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-lighter-orange);
+    gap: 64px;
+    padding: 32px 4%
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 64px;
+
+}
+
+.rodape li{
+    list-style-type: initial;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-right: 2px solid var(--color-black);
+    padding-right:64px ;
+    height: 293px;
+}
+
+
+.enderecos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+    border-right: 2px solid var(--color-black);
+    padding-right:64px ;
+    height: 293px;
+}
+
+.tx-endereco{
+    display: flex;
+    gap: 40px;
+}
+
+.un{
+    width: 188px;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.redes i{
+    font-size: 24px;
+}
+
+.rodape-dev{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.dev{
+    display: flex;
+    padding: 0px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
   

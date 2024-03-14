@@ -23,7 +23,7 @@
                 <img src="./img/menu-icon.svg" alt="menu-hamburguer">
             </div>
         </div>
-    </div>
+    </div><!--container-nav-->
     
     <header>
         <div class="container-banner">
@@ -60,7 +60,8 @@
             <div class="img-bebendo">
             
             </div>
-        </div>
+        </div><!--container container-sucos-->
+
         <div class="container container-vitaminas">
             <div class="img-vitamina">
             
@@ -69,13 +70,134 @@
                 <h2>Vitaminhas energizantes</h2>
                 <p><span>Energize-se! </span>O consumo de vitaminas e minerais está associado aos benefícios para o metabolismo energético, defesa antioxidante, resposta imune, reparação e crescimento tecidual e muscular, além da saúde óssea.</p>
                 <div class="btn-vitaminas">
-                    <a class="btn-vitaminas" href="#">Saiba mais...</a>
+                    <a id="btn-vitaminas" href="#">Saiba mais...</a>
                 </div>
             </div>
             <div class="img-vitaminas">
                 
             </div>
-        </div>
+        </div><!--container container-vitaminas-->
+
+        <div class="container container-novidades">
+            <div class="box-txt-novidade">
+                <div class="txt-novidade">
+                    <h2>Pitaya Fresh</h2>
+                    <p><span>Novidade! </span>Além de profundamente refrescante, ajuda na saúde cardiovascular, graças aos ácidos graxos essenciais como os ômega 3, presentes em suas sementes.</p>
+                    <p>Também promove o bom funcionamento do intestino, por ser uma fonte de fibras e colabora com a prevenção da anemia e osteoporose, pois contém vitaminas e minerais importantes como ferro, fósforo, vitaminas B, C e E.</p>
+                </div>
+            </div>
+            <div class="img-pitaya-fresh">
+            </div>
+        </div><!--container container-novidades-->
+
+        <div class="container container-mkt">
+            <div class="img-garrafa"></div>
+            <div class="box-txt-mkt">
+                <div class="txt-mkt">
+                    <h2>Comprou, Solicitou, Ganhou!</h2>
+                    <p><span>Participe! </span>Na compra de 10 sucos ou vitaminas, você ganha inteiramente grátis uma squeeze <strong>JuVita.</strong> Basta preencher os dados abaixo e nós enviaremos sua squeeze em sua residência.</p>
+                    <small>*Os prêmios podem variar de acordo com a disponibilidade. **Promoção válida por tempo limitado.</small>
+                </div>
+                <form action="">
+                    <div class="container-form nome-form">
+                        <label for="">Nome Completo</label>
+                        <input type="text" id="nome" name="nome"/>
+                    </div>
+                    <div class="container-form cpf-form">
+                        <label for="">Cpf</label>
+                        <input type="number" id="cpf" placeholder="    000.000.000-00">
+                    </div>
+                    <div class="container-form CEP-form">
+                        <label for="">CEP</label>
+                        <input type="number" id="CEP" placeholder="    0000-000">
+                    </div>
+                    <div class="container-form endereco-form">
+                        <label for="">Endereço</label>
+                        <input type="text" id="Endereço">
+                    </div>
+                    <div class="container-form numero-form">
+                        <label for="">Número</label>
+                        <input type="number" id="numero">
+                    </div>
+                    <div class="container-form complemento-form">
+                        <label for="">Complemento</label>
+                        <input type="text" id="Complemento">
+                    </div>
+                    <div class="container-form cidade-form">
+                        <label for="">Cidade</label>
+                        <input type="text" id="Cidade">
+                    </div>
+                    <div class="container-form estado-form">
+                        <label for="">Estado</label>
+                        <input type="text" id="Estado">
+                    </div>
+                    <div class="container-form celular-form">
+                        <label for="">Celular</label>
+                        <input type="tel" id="Celular">
+                    </div>
+                    <div class="form-btn">
+                        <div class="btn-s-form">
+                            <a id="btn-s-form" href="">Solicitar Brinde</a>
+                        </div>
+                        <div class="btn-l-form">
+                            <a id="btn-l-form" href="">Limpar</a>
+                        </div>
+                    </div>
+                </form>
+            </div><!--box-txt-mkt-->
+        </div><!--container container-mkt-->
+
     </main>
+    <footer>
+        <div class="rodape">
+            <div class="map">
+                <strong>Sitemap</strong>
+            <ul>
+                <li>Sucos</li>
+                <li>Vitaminas</li>
+                <li>Novidades</li>
+                <li>Promoção</li>
+            </ul>
+            </div>
+            <div class="enderecos">
+                <strong>Endereços</strong>
+                <div class="tx-endereco">
+                    <div class="un">
+                        <strong>Unidade I</strong>
+                        <p>Av. Saldanha da Gama, 85
+                            São Juca SP</p>
+                    </div>
+                    <div class="un">
+                        <strong>Unidade II</strong>
+                        <p>Rua Ricardo Jofre Leão, 102 
+                            São Juca SP</p>
+                    </div>
+                    <div class="un">
+                        <strong>Unidade III</strong>
+                        <p>Pça. Javier Pacheco, s/n 
+                            São Juca SP</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="contatos">
+                <strong>Contatos</strong>
+                <p>Entre em contato através dos  aplicativos</p>
+                <div class="redes">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </div><!--rodape-->
+        
+        <div class="rodape-dev">
+            <div class="dev">
+                <strong>Desenvolvido por<br>
+                    XYZ Soluções Web</strong>
+                <p>Créditos Fotografias: Imagens de topntp26 no Freepik / Imagens de  Racool_Studio no Freepik</p>
+            </div>
+        </div><!--rodape-dev-->
+    </footer>
+    
 </body>
 </html>
